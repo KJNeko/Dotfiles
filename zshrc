@@ -73,6 +73,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
 	git
 	wakeonlan
+	history-substring-search
 	)
 
 source $ZSH/oh-my-zsh.sh
