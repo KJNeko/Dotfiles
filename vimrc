@@ -7,3 +7,6 @@ let g:vimtex_viewer_method = 'zathura'
 let g:vimtex_compiler_method = 'latexrun'
 
 set clipboard=unnamedplus
+nnoremap <c-z> <nop>
+
+
