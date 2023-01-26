@@ -2,9 +2,14 @@ filetype plugin indent on
 
 syntax enable
 
-let g:vimtex_viewer_method = 'zathura'
+let g:tex_flavor = 'latex'
+let g:Tex_DefaultTargetFormat = 'pdf'
 
-let g:vimtex_compiler_method = 'latexrun'
+if empty(v:servername) && exists('*remote_startserver')
+	call remote_startserver('VIM')
+endif
+
+filetype plugin indent on
 
 set clipboard=unnamedplus
 nnoremap <c-z> <nop>
