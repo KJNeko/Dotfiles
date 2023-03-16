@@ -7,9 +7,9 @@
 - link:
     ~/.bashrc: bashrc
     ~/.latexmkrc: latexmkrc
-    ~/.vim: vim
-    ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.config/nvim: nvim
+
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
