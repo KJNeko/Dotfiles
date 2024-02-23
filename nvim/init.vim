@@ -1,7 +1,7 @@
-filetype plugin indent on
 
-syntax enable
+lua require('plugins')
 
-set clipboard=unnamedplus
 
-nnoremap <c-z> <nop>
+
+
+
