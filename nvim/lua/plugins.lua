@@ -11,10 +11,10 @@ local startup = require('packer').startup(function(use)
 	use 'hrsh7th/nvim-cmp' -- Core text-complete
 	use 'lukas-reineke/cmp-rg' -- Expands for ripgrep
 	use 'hrsh7th/cmp-nvim-lsp' -- Provides source for lsp
+	use 'hrsh7th/cmp-cmdline' -- Src for 
+	use 'hrsh7th/cmp-path' -- Source for filepaths
+	use 'hrsh7th/cmp-buffer' -- Src for things in buffer
 	--use 'onsails/lspkind.nivm' -- TODO: Figure out why this can't be installed
-
-	-- Glorified Text-Complete (AI)
-	use 'zbirenbaum/copilot.lua' --Github Copilot
 
 	-- Notifications
 	use 'rcarriga/nvim-notify' -- Notification/Toast system
@@ -24,6 +24,7 @@ local startup = require('packer').startup(function(use)
 
 	-- C++
 	use 'mfussenegger/nvim-lint' -- Language server linter
+	use 'cdelledonne/vim-cmake' -- Cmake integeration
 
 
 	-- File trees
@@ -43,12 +44,14 @@ local startup = require('packer').startup(function(use)
 	
 	use 'L3MON4D3/LuaSnip' -- Snippet helper
 
-	use 'lervag/vimtex'
+	use 'lervag/vimtex' -- LaTeX plugin
 
 
 end)
 
 -- Config setups
 require("cmp_config")
+require("nvim-lint-config")
+require("vimtex_config")
 return startup
 

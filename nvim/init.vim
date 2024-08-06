@@ -1,7 +1,3 @@
 
 lua require('plugins')
 
-
-
-
-

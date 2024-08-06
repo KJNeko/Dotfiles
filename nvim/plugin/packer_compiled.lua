@@ -79,6 +79,26 @@ _G.packer_plugins = {
     path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
   ["cmp-rg"] = {
     loaded = true,
     path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/cmp-rg",
@@ -104,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/nvim-lint",
     url = "https://github.com/mfussenegger/nvim-lint"
   },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-notify"] = {
     loaded = true,
     path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/nvim-notify",
@@ -123,6 +148,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-cmake"] = {
+    loaded = true,
+    path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/vim-cmake",
+    url = "https://github.com/cdelledonne/vim-cmake"
+  },
+  vimtex = {
+    loaded = true,
+    path = "/home/kj16609/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   },
   ["which-key.nvim"] = {
     loaded = true,
