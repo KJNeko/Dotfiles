@@ -1,10 +1,13 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/usr/share/oh-my-zsh"
 export DBUS_SESSION_BUS_ADDRESS="unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+alias setup_vk='source ~/VulkanSDK/Releases/latest/setup-env.sh'
+alias qrenderdoc='setup_vk && /usr/bin/qrenderdoc'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,8 +108,7 @@ plugins=(
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #Wine
-alias WINEPREFIX_HERE="WINEPREFIX=$(pwd)/pfx"
-alias winep="WINEPREFIX_HERE wine"
+source ~/.aliases
 alias dxvkp="WINEPREFIX_HERE setup_dxvk install"
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -124,3 +126,5 @@ compinit
 # End of lines added by compinstall
 
 source $ZSH/oh-my-zsh.sh
+
+source ~/.ssh/tokens
